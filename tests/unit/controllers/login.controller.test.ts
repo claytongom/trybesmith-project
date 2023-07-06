@@ -2,6 +2,7 @@ import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import { Request, Response } from 'express';
+import loginController from '../../../src/controller/login.controller';
 
 chai.use(sinonChai);
 
@@ -14,5 +15,9 @@ describe('LoginController', function () {
     res.json = sinon.stub().returns(res);
     sinon.restore();
   });
+
+  // describe('login', function () {
+
+
 
 });
